@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicoin-240.png" type="image/png">  <!-- This is the line you add -->
+    <title>PRESENTACION</title>
+</head>
+
+    <body>
+<!------------ HEADER CONTAINER + MENU FOR MOBILE FIRST --------------------- -->
+        <header class="header"> 
+            <input type="checkbox" class="header__checkbox" id="open-menu"><!--menu para mobile first-->
+            <label for="open-menu" class="header__open-nav-button" role="button">=</label>
+<!--------------------- Aqui esta el logo del navbar-------------------->
+            <div class="header_logo-container">
+                <img class="header__logo"  src="LOGO.png" alt="foto de perfil">
+            </div>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item" ><a href="#profile">Sobre Mi</a></li>
+                    <li class="header__nav-item" ><a href="#portfolio">Portafolio</a></li>
+                    <li class="header__nav-item" ><a href="#form">Contacto</a></li>
+                </ul>
+
+            </nav>
+        </header>
+        <!-----------------MAIN SECTION PARA EL CONTENIDO PRINCIPAL------------>
+        <main class="profile" id="profile">
+            <div class="profile__wrapper">
+                <div class="profile__img-container">
+                    <img  class="profile__img" src="./PortalFoto.jpg" alt="foto de presentacion de jeremy">
+                </div>
+<!------------------Este es el contenedor de la informacion descriptiva------->
+                <div class="profile__data-contianer">
+                    <div class="profile__data">
+                        <div class="profile__descripcion">
+                            <h1>¿Quien es Jeremy Paulino?</h1>
+                            <p>Un muchacho de 21 años apasionado por el desarrollo web, nativo de la República Dominicana, con talento innato ha destacado en sus primeros pasos camino a la programación y desarrollo web. Actualmente es estudiante y autodidacta, abierto a aprender cualquier lenguaje.</p>
+                        </div>
+<!---------------------------UL para los skills------------------------------>
+                        <div class="profile__skills-container">
+                            <h2>HABLIDADES</h2>
+                            <ul>
+                                <li class="profile__skills">
+                                    <div class="load-bar">
+                                        <div class="load-bar__bar bar--80">80%</div>
+                                    </div>
+                                    <span class="profile__skill-name">HTML</span>
+                                </li>
+                                <li class="profile__skills">
+                                    <div class="load-bar">
+                                        <div class="load-bar__bar bar--60">60%</div>
+                                    </div>
+                                    <span class="profile__skill-name">CSS</span>
+                                </li>
+                                <li class="profile__skills">
+                                    <div class="load-bar">
+                                        <div class="load-bar__bar bar--40">40%</div>
+                                    </div>
+                                    <span class="profile__skill-name">JavaScript</span>
+                                </li>
+                                <li class="profile__skills">
+                                    <div class="load-bar">
+                                        <div class="load-bar__bar bar--65">65%</div>
+                                    </div>
+                                    <span class="profile__skill-name">SQL</span>
+                                </li>
+                                <li class="profile__skills">
+                                    <div class="load-bar">
+                                        <div class="load-bar__bar bar--20">20%</div>
+                                    </div>
+                                    <span class="profile__skill-name">C#</span>
+                                </li>
+                            </ul>
+                        </div>
+<!------------------fin del contenedor de la informacion descriptiva---------->
+
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    <!--COMIENZO DE SECTION PARA EL PORTAFOLIO------------->
+    <section class="portfolio" id="portfolio"> 
+    <h2 class="portfolio__title">SECCION DE PORTAFOLIO</h2>
+        <div class="portfolio__project-container"><!--CONTAINER START-->
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name">PROYECTO</h2>
+            </div>
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name">PROYECTO</h2>
+            </div>
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name">PROYECTO</h2>
+            </div>
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name">PROYECTO</h2>
+            </div>
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name">PROYECTO</h2>
+            </div>
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name">PROYECTO</h2>
+            </div><!--------------CONTAINER ENDS-------------->
+        </div>
+    </section>
+    <!------------------FIN DE SECTION PARA EL PORTAFOLIO-------------->
+    <section class="form" id="form">
+        <h2 class="form__title">CONTACTO</h2>
+        <form  class="form__form">
+            <div class="form__input-container">
+                <label>Nombre
+                    <input type="text" placeholder="Jhon">
+                </label>
+            </div>
+            <div class="form__input-container">
+                <label>Apellido
+                    <input type="text" placeholder="Doe">
+                </label>
+            </div>
+            <div class="form__input-container">
+                <label>E-mail
+                    <input type="E-mail" placeholder="mail@example.com">
+                </label>
+            </div>
+            <div class="form__input-container">
+                <label>Mensaje
+                    <textarea placeholder="Your Message"></textarea>
+                </label>
+            </div>
+            <div class="form__input-container">
+                <label>
+                    <input type="submit" value="Enviar">
+                </label>
+            </div>
+        </form>
+    </section>    
+<!------------------COMIENZO DEL FOOTER-------------->
+<footer class="footer">
+    <div class="footer__container">
+        <ul class="footer__list">
+            <li class="footer__item">
+                <a href="https://www.instagram.com/_jeremypaulino/" class="footer__link" target="_blank">
+                    <img src="/instagram.png" alt="Instagram" class="footer__icon">
+                </a>
+            </li>
+            <li class="footer__item">
+                <a href="mailto:paulinotav1017@gmail.com" class="footer__link">
+                    <img src="/gmail-icon.png" alt="Gmail" class="footer__icon">
+                </a>
+            </li>
+            <li class="footer__item">
+                <a href="https://www.facebook.com/juan.pinero.9275?locale=es_LA" class="footer__link" target="_blank">
+                    <img src="/fb.pg.png" alt="facebook" class="footer__icon">
+                </a>
+            </li>
+            <!-- Puedes agregar más enlaces aquí -->
+        </ul>
+    </div>
+    <p><b>Jeremy</b> - @CopyRight 2024</p>
+</footer>
+<!------------------FIN DEL FOOTER-------------->
+
+
+</body>
+
+</html>
